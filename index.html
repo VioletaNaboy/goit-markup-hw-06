@@ -392,38 +392,49 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-socials">
-          <h4 class="footer-title">Social media</h4>
-          <ul class="list list-social-footer">
-            <li class="item-social">
-              <a class="link link-social-footer" href="">
-                <svg class="icon-social" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-social">
-              <a class="link link-social-footer" href="">
-                <svg class="icon-social" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-social">
-              <a class="link link-social-footer" href="">
-                <svg class="icon-social" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item-social">
-              <a class="link link-social-footer" href="">
-                <svg class="icon-social" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="wrapper-social-subscription">
+          <div class="footer-socials">
+            <h4 class="footer-title">Social media</h4>
+            <ul class="list list-social-footer">
+              <li class="item-social">
+                <a class="link link-social-footer" href="">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social">
+                <a class="link link-social-footer" href="">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social">
+                <a class="link link-social-footer" href="">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-social">
+                <a class="link link-social-footer" href="">
+                  <svg class="icon-social" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper-subscription">
+            <h4 class="footer-title">Subscribe</h4>
+            <form class="subscription-form" autocomplete="off">
+              <input type="email" name="email" id="email-subsription" />
+              <button class="subscription-button button" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -436,38 +447,73 @@
           </svg>
         </button>
         <div class="form-container">
-          <h2 class="title-form">
-            Leave your contacts and we will call you back
-          </h2>
-          <form class="form">
+          <strong class="title-form"
+            >Leave your contacts and we will call you back</strong
+          >
+          <form class="form" autocomplete="off">
             <div class="form-group">
-              <label class="label-form name" for="name">
-                Name
-                <input class="input" type="text" name="name" required />
-              </label>
-              <label class="label-form" for="phone">
-                Phone
-                <input class="input" type="tel" name="phone" required />
-              </label>
-              <label class="label-form" for="email">
-                Email
-                <input class="input" type="email" name="email" required />
-              </label>
-              <label class="label-form">
-                Comment
+              <div class="form-field">
+                <label class="label-form name" for="name">Name</label>
+
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder=" "
+                />
+                <svg class="form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="label-form" for="phone"> Phone</label>
+
+                <input
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder=" "
+                />
+                <svg class="form-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="label-form" for="email">Email</label>
+
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder=" "
+                />
+                <svg class="form-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="form-field">
+                <label class="label-form" for="comment">Comment</label>
+
                 <textarea
                   class="textarea"
                   name="comment"
                   required
                   placeholder="Text input"
+                  id="comment"
                 ></textarea>
-              </label>
+              </div>
             </div>
             <label class="label-accord">
               <input type="checkbox" name="accord" required />
               <p>
                 I accept the terms and conditions of the
-                <a class="accord-link link">Privacy Policy</a>
+                <a class="accord-link link" href="">Privacy Policy</a>
               </p>
             </label>
             <button class="button button-form" type="submit">Send</button>

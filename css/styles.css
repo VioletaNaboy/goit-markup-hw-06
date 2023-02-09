@@ -58,7 +58,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+strong {
   margin: 0;
 }
 ul {
@@ -440,11 +441,12 @@ main {
   color: var(--borders-color);
   width: 264px;
   margin-top: 16px;
-  margin-right: 120px;
 }
 .container-footer {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 120px;
 }
 .footer-title {
   font-weight: 500;
@@ -474,6 +476,26 @@ main {
 .link-social-footer:hover,
 .link-social-footer:focus {
   background-color: var(--success-green);
+}
+
+.wrapper-social-subscription {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.subscription-form {
+  display: flex;
+  gap: 24px;
+}
+.subscription-button {
+  width: 165px;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: var(--prymary-brand-color);
+  border-radius: 4px;
 }
 /* Modal window */
 .backdrop {
@@ -539,12 +561,12 @@ main {
   border: none;
 }
 .title-form {
-  font-family: "Roboto";
+  display: block;
   font-weight: 500;
   font-size: 16px;
-  text-align: center;
   color: var(--dark-logo-color);
-  margin-bottom: 16px;
+  text-align: center;
+  margin: 0 auto 16px auto;
 }
 .form {
   display: flex;
@@ -565,19 +587,49 @@ main {
   line-height: 1.33;
   letter-spacing: 0.04em;
 }
-.label-form {
+.form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 .textarea {
+  padding: 8px 16px;
   resize: none;
   width: 360px;
   height: 120px;
+  font-size: 18px;
+  color: #000;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input {
   width: 360px;
   height: 40px;
+  padding: 11px 38px;
+  color: #000;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:hover + .form-icon,
+.input:focus + .form-icon {
+  fill: var(--prymary-brand-color);
+}
+.input:hover,
+.textarea:hover,
+.input:focus,
+.textarea:focus {
+  border: 1px solid var(--prymary-brand-color);
+}
+.form-icon {
+  position: absolute;
+  left: 19px;
+  bottom: 14px;
+  transform: translateX(-50%);
+  fill: var(--dark-logo-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-accord {
   display: flex;
@@ -601,4 +653,16 @@ main {
   letter-spacing: 0.04em;
   color: #ffffff;
   margin: 0 auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-form:hover,
+.button-form:focus {
+  background: var(--pressed-state-color);
+}
+
+.textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
 }
