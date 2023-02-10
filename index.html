@@ -426,15 +426,27 @@
               </li>
             </ul>
           </div>
-          <div class="wrapper-subscription">
-            <h4 class="footer-title">Subscribe</h4>
-            <form class="subscription-form" autocomplete="off">
-              <input type="email" name="email" id="email-subsription" />
+          <form class="subscription-form" autocomplete="off">
+            <label class="footer-title" for="email-subscription">
+              Subscribe
+            </label>
+            <div class="wrapper-subscription">
+              <input
+                placeholder="E-mail"
+                class="input-subscription"
+                type="email"
+                name="email"
+                id="email-subscription"
+                required
+              />
               <button class="subscription-button button" type="submit">
-                Subscribe
+                <span>Subscribe</span>
+                <svg class="icon-button" width="24" height="20">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -454,7 +466,6 @@
             <div class="form-group">
               <div class="form-field">
                 <label class="label-form name" for="name">Name</label>
-
                 <input
                   class="input"
                   type="text"
@@ -509,13 +520,25 @@
                 ></textarea>
               </div>
             </div>
-            <label class="label-accord">
-              <input type="checkbox" name="accord" required />
+            <label class="form-ckeckbox">
+              <input
+                class="visually-hidden checkbox-hidden"
+                type="checkbox"
+                name="accord"
+                id="accord"
+                required
+              />
+              <div class="checkbox">
+                <svg class="icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-ok"></use>
+                </svg>
+              </div>
               <p>
                 I accept the terms and conditions of the
                 <a class="accord-link link" href="">Privacy Policy</a>
               </p>
             </label>
+
             <button class="button button-form" type="submit">Send</button>
           </form>
         </div>
